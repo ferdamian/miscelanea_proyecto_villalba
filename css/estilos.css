@@ -13,12 +13,27 @@
     border: 5px solid purple;
     margin: 5px;
 }
+.centrarImagenHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ESTILOS HEADER*/
+header{
+    background-color: black;
+}
+
 /*Nombre de areas*/
 .cabeza{
     grid-area: cabeza;
 }
 .topMenu{
     grid-area: topMenu;
+}
+.columna{
+    grid-area: columna;
 }
 .contenido{
     grid-area: contenido;
@@ -42,9 +57,9 @@
 /*RESPONSIVE*/
 /*! DESKTOP */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
  /* Areas de Index*/ 
-.gridAreaIndex {
+.gridAreaIndex{
     display: grid;
     grid-template-areas:
     "cabeza cabeza cabeza"
@@ -57,19 +72,74 @@
     grid-template-rows: 2fr 1fr 3fr 1fr 2fr 1fr;
     grid-template-columns: 20% 30% auto;
 }
+/* Areas de Nosotros*/ 
+.gridAreaNosotros{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "topMenu topMenu topMenu"
+    "contenido contenido contenido"
+    "logo mapa redesSociales"
+    "pie pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 4fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+}
+/*Areas de Productos*/
+.gridAreaProductos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "topMenu topMenu topMenu"
+    "columna contenido contenido"
+    "botMenu botMenu botMenu"
+    "logo mapa redesSociales"
+    "pie pie pie"
+    ;
+    grid-template-rows: 3fr 2fr 5fr 2fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+}
+/*Areas de Contacto*/
+.gridAreaContacto{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "topMenu topMenu topMenu"
+    "contenido contenido contenido"
+    "logo mapa redesSociales"
+    "pie pie pie"
+    ;
+    grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+}
+/*Areas de Tienda*/
+.gridAreaTienda{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "topMenu topMenu topMenu"
+    "contenido contenido contenido"
+    "logo mapa redesSociales"
+    "pie pie pie"
+    ;
+    grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+}
 
-/* Body*/
-body {
+/*body*/
+body{
     background-color: yellow;
     width: 100%;
     height: 100vh;
 }
+
 }
- 
-/*! TABLET*/
+
+/*TABLET*/
+
 @media (min-width: 481px) and (max-width: 1023px){
-    /* Areas de Index*/ 
-.gridAreaIndex {
+/*Areas de Index*/ 
+.gridAreaIndex{
     display: grid;
     grid-template-areas:
     "cabeza cabeza"
@@ -83,17 +153,73 @@ body {
     grid-template-columns: 30% auto;
 }
 
-/* Body*/
+/*Areas de Nosotros*/
+.gridAreaNosotros{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu contenido"
+    "mapa contenido"
+    "logo redesSociales"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+}
+/*Areas de Productos*/
+.gridAreaProductos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "columna contenido"
+    "mapa contenido"
+    "botMenu botMenu"
+    "logo redesSociales"
+    "pie pie"
+    ;
+    grid-template-rows: 3fr 1fr 4fr 3fr 1fr 3fr 1fr;
+    grid-template-columns: 50% auto;
+}
+/*Areas de Contactos*/
+.gridAreaContacto{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu contenido"
+    "mapa contenido"
+    "logo redesSociales"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+}
+/*Areas de Tienda*/
+.gridAreaTienda{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu contenido"
+    "mapa contenido"
+    "logo redesSociales"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
+    grid-template-columns: 25% auto;
+}
+
+/*body*/
 body {
     background-color: beige;
     width: 100%;
     height: 100vh;
 }
 }
-/*! SMARTPHONE*/
+/*SMARTPHONE*/
 @media (max-width: 480px){
-      /* Areas de Index*/ 
-.gridAreaIndex {
+
+/* Areas de Index*/ 
+.gridAreaIndex{
     display: grid;
     grid-template-areas:
     "cabeza cabeza"
@@ -107,9 +233,67 @@ body {
     grid-template-rows: 2fr 1fr 5fr 3fr 1fr 2fr 1fr;
     grid-template-columns: 40% auto;
 }
+/* Areas de Nosotros*/
+.gridAreaNosotros{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "contenido contenido"
+    "redesSociales redesSociales"
+    "logo mapa"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+}
+/* Areas de Productos*/
+.gridAreaProductos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "columna columna"
+    "contenido contenido"
+    "botMenu botMenu"
+    "redesSociales redesSociales"
+    "logo mapa"
+    "pie pie"
+    ;
+    grid-template-rows: 4fr 2fr 2fr 6fr 2fr 3fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+}
+/* Areas de Contactos*/
+.gridAreaContacto{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "contenido contenido"
+    "redesSociales redesSociales"
+    "logo mapa"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+}
+/* Areas de Tienda*/
+.gridAreaTienda{
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "contenido contenido"
+    "redesSociales redesSociales"
+    "logo mapa"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-columns: 50% auto;
+}
 
 /* Body*/
-body {
+body{
     background-color: rosybrown;
     width: 100%;
     height: 100vh;
