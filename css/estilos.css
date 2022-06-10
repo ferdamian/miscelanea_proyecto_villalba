@@ -1,0 +1,117 @@
+/* Estilos generales*/
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&display=swap');
+
+.bordeTemporal{
+    border: 5px solid purple;
+    margin: 5px;
+}
+/*Nombre de areas*/
+.cabeza{
+    grid-area: cabeza;
+}
+.topMenu{
+    grid-area: topMenu;
+}
+.contenido{
+    grid-area: contenido;
+}
+.botMenu{
+    grid-area: botMenu;
+}
+.logo{
+    grid-area: logo;
+}
+.mapa{
+    grid-area: mapa;
+}
+.redesSociales{
+    grid-area: redesSociales;
+}
+.pie{
+    grid-area: pie;
+}
+
+/*RESPONSIVE*/
+/*! DESKTOP */
+
+@media (min-width: 1024px) {
+ /* Areas de Index*/ 
+.gridAreaIndex {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "topMenu topMenu topMenu"
+    "contenido contenido contenido"
+    "botMenu botMenu botMenu"
+    "logo mapa redesSociales"
+    "pie pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 3fr 1fr 2fr 1fr;
+    grid-template-columns: 20% 30% auto;
+}
+
+/* Body*/
+body {
+    background-color: yellow;
+    width: 100%;
+    height: 100vh;
+}
+}
+ 
+/*! TABLET*/
+@media (min-width: 481px) and (max-width: 1023px){
+    /* Areas de Index*/ 
+.gridAreaIndex {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu contenido"
+    "mapa contenido"
+    "logo redesSociales"
+    "botMenu botMenu"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 3fr 3fr 2fr 1fr 1fr;
+    grid-template-columns: 30% auto;
+}
+
+/* Body*/
+body {
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+}
+}
+/*! SMARTPHONE*/
+@media (max-width: 480px){
+      /* Areas de Index*/ 
+.gridAreaIndex {
+    display: grid;
+    grid-template-areas:
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "contenido contenido"
+    "redesSociales redesSociales"
+    "botMenu botMenu"
+    "logo mapa"
+    "pie pie"
+    ;
+    grid-template-rows: 2fr 1fr 5fr 3fr 1fr 2fr 1fr;
+    grid-template-columns: 40% auto;
+}
+
+/* Body*/
+body {
+    background-color: rosybrown;
+    width: 100%;
+    height: 100vh;
+}
+}
