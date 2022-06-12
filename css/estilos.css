@@ -24,6 +24,42 @@
 header{
     background-color: black;
 }
+/* nav styles*/
+/*--------------------------*/
+.estiloNav{
+    background-color: black;
+    border: solid white 2px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: solid 2px red;
+}
+
+/*ESTILOS REDES SOCIALES*/
+.imagenRedes{
+    width: 30%;
+}
+.centrarRedes{
+    margin: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.centrarImagenRedes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+/* ESTILOS LETRAS*/
+h4{
+    text-align: center;
+}
 
 /*Nombre de areas*/
 .cabeza{
@@ -65,11 +101,10 @@ header{
     "cabeza cabeza cabeza"
     "topMenu topMenu topMenu"
     "contenido contenido contenido"
-    "botMenu botMenu botMenu"
     "logo mapa redesSociales"
     "pie pie pie"
     ;
-    grid-template-rows: 2fr 1fr 3fr 1fr 2fr 1fr;
+    grid-template-rows: 5fr 2fr 6fr 4fr 1fr;
     grid-template-columns: 20% 30% auto;
 }
 /* Areas de Nosotros*/ 
@@ -133,6 +168,18 @@ body{
     height: 100vh;
 }
 
+/* NAV */
+.menuNavegacion{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.estiloLi {
+    list-style-type: none;
+    margin: 2%;
+    width: 12%;
+}
+
 }
 
 /*TABLET*/
@@ -146,10 +193,9 @@ body{
     "topMenu contenido"
     "mapa contenido"
     "logo redesSociales"
-    "botMenu botMenu"
     "pie pie"
     ;
-    grid-template-rows: 2fr 3fr 3fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 2fr 1fr;
     grid-template-columns: 30% auto;
 }
 
@@ -208,12 +254,23 @@ body{
     grid-template-columns: 25% auto;
 }
 
-/*body*/
+/* BODY */
 body {
     background-color: beige;
     width: 100%;
     height: 100vh;
 }
+/* NAV*/
+.menuNavegacion {
+    display:flex;
+    flex-flow: column nowrap;
+}
+.estiloLi {
+    list-style-type: none;
+    margin: 5%;
+    width: 12%;
+}
+
 }
 /*SMARTPHONE*/
 @media (max-width: 480px){
@@ -226,11 +283,10 @@ body {
     "topMenu topMenu"
     "contenido contenido"
     "redesSociales redesSociales"
-    "botMenu botMenu"
     "logo mapa"
     "pie pie"
     ;
-    grid-template-rows: 2fr 1fr 5fr 3fr 1fr 2fr 1fr;
+    grid-template-rows: 3fr 1fr 5fr 3fr 3fr 1fr;
     grid-template-columns: 40% auto;
 }
 /* Areas de Nosotros*/
@@ -298,4 +354,27 @@ body{
     width: 100%;
     height: 100vh;
 }
+/* NAV */
+.menuNavegacion {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.estiloNav{
+    background-color: black;
+    border: solid white 2px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.estiloLi {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4%;
+    padding: 9%;
+    width: 12%;
+    font-size: 18px;
+}
+
 }
