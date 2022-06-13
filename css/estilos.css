@@ -226,6 +226,9 @@ h4{
     font-size: 20px;
     margin-right: 10%;
 }
+.mostrarCarrouselDos{
+    display: none;
+}
 
 }
 
@@ -304,12 +307,30 @@ h4{
     grid-template-rows: 2fr 4fr 3fr 3fr 1fr;
     grid-template-columns: 25% auto;
 }
-
+/* MAIN*/
+.centrarCarrousel{
+    display: flex;
+    align-items: center;
+}
+.mostrarCarrouselUno{
+    display: none;
+}
 /* NAV*/
 .estiloNav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.pruebacarrousel{
+    height: 100%;
+}
+.pruebacarrouseldos{
+    margin-top: 100px;
+}
+.texto{
+    margin-top: 50px;
+    padding: 2%;
+    margin-left: 1%;
 }
 .estiloNavProductos{
     display: flex;
@@ -415,6 +436,21 @@ h4{
     grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
     grid-template-columns: 50% auto;
 }
+/* MAIN */
+
+.centrarCarrousel{
+    display: flex;
+    align-items: center;
+}
+.mostrarCarrouselUno{
+    display: none;
+}
+.pruebacarrousel{
+    height: 100%;
+    margin-top: 22px;
+}
+
+
 /* NAV */
 .menuNavegacion {
     display:flex;
