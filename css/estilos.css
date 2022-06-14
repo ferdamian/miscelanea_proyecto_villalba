@@ -28,6 +28,13 @@ body{
     height: 100vh;
 }
 
+/*ESTILOS MAIN*/
+
+.margenes{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 /*ESTILOS HEADER*/
 header{
     background-color: black;
@@ -71,11 +78,37 @@ a:hover{
     display: flex;
     align-items: center;
 }
+/* ASIDE*/
+
+.columnaProductos {
+    display: flex;
+    flex-flow: column wrap;
+}
+aside {
+    background-color: black;
+    margin: 1%;
+    padding: 10%;
+}
+.aColumn{
+    background-color: white;
+    text-align:center;
+    margin: 8%;
+    padding: 5%;
+}
+span:hover{
+    border-bottom: solid 2px     red;
+}
 /* MAPA*/
 .mapaImg{
     width: 75%;
     height: 75%;
     border: solid 10px green;
+}
+.centrarMapaContacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
 }
 .centrarMapa{
     display: flex;
@@ -95,6 +128,10 @@ a:hover{
 /* ESTILOS LETRAS*/
 h4{
     text-align: center;
+}
+.centrarTitulo{
+    text-align: center;
+    margin-top: 3%;
 }
 
 /*Nombre de areas*/
@@ -125,6 +162,23 @@ h4{
 .pie{
     grid-area: pie;
 }
+
+
+/* //////// */
+/* ANIMACIONES*/
+
+.aparecerTextoDerecha{
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+    from{transform: translatex(50%);}
+    to{transform: translate(0);}
+}
+
+/* //////// */
 
 /*RESPONSIVE*/
 
@@ -179,14 +233,14 @@ h4{
 .gridAreaContacto{
     display: grid;
     grid-template-areas:
-    "cabeza cabeza cabeza"
-    "topMenu topMenu topMenu"
-    "contenido contenido contenido"
-    "logo mapa redesSociales"
-    "pie pie pie"
+    "cabeza cabeza"
+    "topMenu topMenu"
+    "contenido contenido"
+    "logo redesSociales"
+    "pie pie"
     ;
     grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
-    grid-template-columns: 20% 30% auto;
+    grid-template-columns: 20% auto;
 }
 /*Areas de Tienda*/
 .gridAreaTienda{
@@ -228,6 +282,59 @@ h4{
 }
 .mostrarCarrouselDos{
     display: none;
+}
+/* PRODUCTOS*/
+.centrarImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+/*Flexs styles---------------*/
+.todosProductosFlex{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.productoFlex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: right;
+}
+/*Grid Areas producto Meeples*/
+.gridAreasProductoMeeples{
+    display: grid;
+    grid-template-areas: 
+    "textoUno imagenColumna"
+    "textoDos imagenColumna"
+    ;
+    grid-template-columns: 50% 50%;
+}
+/*Grid Areas procuto Tokens*/
+.gridAreasProductoTokens{
+    display: grid;
+    grid-template-areas: 
+    "textoUno imagenColumna"
+    "textoDos imagenColumna"
+    "textoTres imagenColumna"
+    ;
+    grid-template-columns: 50% 50%;
+}
+.textoUno{
+    grid-area: textoUno;
+}
+.textoDos{
+    grid-area: textoDos;
+}
+.textoTres{
+    grid-area: textoTres;
+}
+.imagenColumna{
+    grid-area: imagenColumna;
+}
+h2{
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
 }
 
 }
@@ -273,9 +380,9 @@ h4{
     "cabeza cabeza"
     "topMenu topMenu"
     "columna contenido"
-    "mapa contenido"
     "botMenu botMenu"
-    "logo redesSociales"
+    "redesSociales redesSociales"
+    "logo mapa"
     "pie pie"
     ;
     grid-template-rows: 3fr 1fr 4fr 3fr 1fr 3fr 1fr;
@@ -287,7 +394,7 @@ h4{
     grid-template-areas:
     "cabeza cabeza"
     "topMenu contenido"
-    "mapa contenido"
+    "topMenu contenido"
     "logo redesSociales"
     "pie pie"
     ;
@@ -353,6 +460,72 @@ h4{
     margin-top: 2%;
 }
 
+/* PRODUCTOS*/
+.centrarImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+/*Flexs styles---------------*/
+.todosProductosFlex{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.productoFlex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: right;
+}
+
+
+.textoUno{
+    grid-area: textoUno;
+}
+.textoDos{
+    grid-area: textoDos;
+}
+.textoTres{
+    grid-area: textoTres;
+}
+.imagenColumna{
+    grid-area: imagenColumna;
+}
+h2{
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+}
+.ImgCajitas{
+    width: 10%;
+}
+.productoImgSmarthphoneCaja{
+    width: 100%;
+}
+.productoImgSmarthphoneEspacioCaja{
+    width: 60%;
+}
+.productoImgSmarthphoneDescripcionCaja{
+    width: 100%;
+}
+.productoImgSmarthphoneNaipes{
+    width: 100%;
+}
+.productoImgSmarthphoneDescripcionNaipes{
+    width: 90%;
+}
+.productoImgSmarthphoneTableros{
+    width: 100%;
+}
+.productoImgSmarthphoneDescripcionTableros{
+    width: 70%;
+}
+.productoImgSmarthphoneMeeples{
+    width: 100%;
+}
+.productoImgSmarthphoneTokens{
+    width: 100%;
+}
 
 }
 
@@ -405,7 +578,7 @@ h4{
     "logo mapa"
     "pie pie"
     ;
-    grid-template-rows: 4fr 2fr 2fr 6fr 2fr 3fr 2fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 1fr;
     grid-template-columns: 40% auto;
 }
 /* Areas de Contactos*/
@@ -416,10 +589,10 @@ h4{
     "topMenu topMenu"
     "contenido contenido"
     "redesSociales redesSociales"
-    "logo mapa"
+    "logo logo"
     "pie pie"
     ;
-    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 2fr 1fr 1fr;
     grid-template-columns: 50% auto;
 }
 /* Areas de Tienda*/
@@ -483,5 +656,55 @@ h4{
     width: 12%;
     font-size: 18px;
 }
+/*ASIDE*/
+.aColumn{
+    margin: 1%;
+    padding: 0;
+}
+aside{
+    padding: 0;
+}
+/*LOGO*/
+.logoImg{
+    width: 60%;
+}
 
+.productoImgSmarthphoneCaja{
+    width: 60%;
+}
+.productoImgSmarthphoneEspacioCaja{
+    width: 60%;
+}
+.productoImgSmarthphoneDescripcionCaja{
+    width: 70%;
+}
+.productoImgSmarthphoneNaipes{
+    width: 60%;
+}
+.productoImgSmarthphoneDescripcionNaipes{
+    width: 90%;
+}
+.productoImgSmarthphoneTableros{
+    width: 60%;
+}
+.productoImgSmarthphoneDescripcionTableros{
+    width: 65%;
+}
+.productoImgSmarthphoneMeeples{
+    width: 70%;
+}
+.productoImgSmarthphoneTokens{
+    width: 60%;
+}
+
+h2{
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+}
+.centrarImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 }
