@@ -1,0 +1,20 @@
+/* ASIDE*/
+
+.columnaProductos {
+    display: flex;
+    flex-flow: column wrap;
+}
+aside {
+    background-color: black;
+    margin: 1%;
+    padding: 10%;
+}
+.aColumn{
+    background-color: white;
+    text-align:center;
+    margin: 8%;
+    padding: 5%;
+}
+span:hover{
+    border-bottom: solid 2px     red;
+}

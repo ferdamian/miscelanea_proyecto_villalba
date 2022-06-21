@@ -1,0 +1,28 @@
+/*ESTILOS REDES SOCIALES*/
+.imagenRedes{
+    width: 30%;
+}
+.centrarRedes{
+    margin: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.centrarImagenRedes{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.centrarRedesSociales{
+    display: flex;
+    align-items: center;
+}
+
+.sacarGutter{
+    --bs-gutter-x: 0rem;
+}
+
+/*NOWRAP REDES*/
+.sacarwrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
