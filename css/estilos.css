@@ -1,5 +1,20 @@
-/*body*/
+/* Estilos generales*/
+/*-------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Google Fonts*/
+.bordeTemporal {
+  border: 5px solid purple;
+  margin: 5px;
+}
+
+/*Variables*/ /*body*/
 body {
   background-image: url("../imagenes/backgroundNosotros.png");
   width: 100%;
@@ -8,7 +23,7 @@ body {
 
 /*ESTILOS HEADER*/
 header {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .centrarImagenHeader {
@@ -37,7 +52,7 @@ header {
 /* nav styles*/
 /*--------------------------*/
 .estiloNav {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: solid white 2px;
   display: flex;
   align-items: center;
@@ -45,14 +60,13 @@ header {
 }
 
 .estiloNavProductos {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   border: solid white 2px;
 }
 
 a {
   text-decoration: none;
 }
-
 a:hover {
   border-bottom: solid 2px red;
 }
@@ -96,7 +110,7 @@ a:hover {
 }
 
 aside {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   margin: 1%;
   padding: 10%;
 }
@@ -114,7 +128,7 @@ span:hover {
 
 /* ESTILOS FOOTER*/
 footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,6 +166,12 @@ footer {
 }
 
 /* ESTILOS LETRAS*/
+h2 {
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
+}
+
 h4 {
   text-align: center;
 }
@@ -159,21 +179,6 @@ h4 {
 .centrarTitulo {
   text-align: center;
   margin-top: 3%;
-}
-
-/* Estilos generales*/
-/*-------------------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto Flex", sans-serif;
-  box-sizing: border-box;
-}
-
-/*Google Fonts*/
-.bordeTemporal {
-  border: 5px solid purple;
-  margin: 5px;
 }
 
 /*Nombre de areas*/
@@ -213,6 +218,11 @@ h4 {
   grid-area: pie;
 }
 
+/*
+///////////////////////////////
+/// RESPONSIVE DESKPOT/////////
+/// ///////////////////////////
+*/
 @media (min-width: 1024px) {
   /* Areas de Index*/
   .gridAreaIndex {
@@ -316,12 +326,12 @@ h4 {
   .imagenColumna {
     grid-area: imagenColumna;
   }
-  h2 {
-    text-align: center;
-    padding: 2%;
-    margin: 1%;
-  }
 }
+/*
+///////////////////////////////
+/// RESPONSIVE TABLET /////////
+/// ///////////////////////////
+*/
 @media (min-width: 481px) and (max-width: 1023px) {
   /*Areas de Index*/
   .gridAreaIndex {
@@ -437,11 +447,6 @@ h4 {
   .imagenColumna {
     grid-area: imagenColumna;
   }
-  h2 {
-    text-align: center;
-    padding: 2%;
-    margin: 1%;
-  }
   .ImgCajitas {
     width: 10%;
   }
@@ -476,6 +481,11 @@ h4 {
     width: 80%;
   }
 }
+/*
+///////////////////////////////
+/// RESPONSIVE SMARTHPHONE ////
+/// ///////////////////////////
+*/
 /*SMARTPHONE*/
 @media (max-width: 480px) {
   /* Areas de Index*/
@@ -594,11 +604,6 @@ h4 {
   }
   .productoImgSmarthphoneTokens {
     width: 60%;
-  }
-  h2 {
-    text-align: center;
-    padding: 2%;
-    margin: 1%;
   }
   .centrarImg {
     display: flex;

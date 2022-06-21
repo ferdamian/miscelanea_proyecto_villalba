@@ -1,3 +1,10 @@
+
+/*
+///////////////////////////////
+/// RESPONSIVE DESKPOT/////////
+/// ///////////////////////////
+*/
+
 @media (min-width: 1024px){
     /* Areas de Index*/ 
    .gridAreaIndex{
@@ -37,7 +44,7 @@
        "pie pie pie"
        ;
        grid-template-rows: 2fr 1fr 5fr 1fr 2fr 1fr;
-       grid-template-columns: 20% 30% auto;
+       grid-template-columns: $col1 $col2 $col3;
    }
    /*Areas de Contacto*/
    .gridAreaContacto{
@@ -63,7 +70,7 @@
        "pie pie pie"
        ;
        grid-template-rows: 3fr 1fr 6fr 2fr 1fr;
-       grid-template-columns: 20% 30% auto;
+       grid-template-columns: $col1 $col2 $col3;
    }
    /* NAV */
    .menuNavegacion{
@@ -141,10 +148,5 @@
    .imagenColumna{
        grid-area: imagenColumna;
    }
-   h2{
-       text-align: center;
-       padding: 2%;
-       margin: 1%;
-   }
-   
+  
    }

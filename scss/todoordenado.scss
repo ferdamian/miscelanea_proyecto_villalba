@@ -1,24 +1,25 @@
 
 
-
-
-
-@import "estilobody";
-@import "estiloheader";
-@import "estilomain";
-@import "estilonav";
-@import "estiloredessociales";
-@import "estiloaside";
-@import "estilofooter";
-@import "estilologo";
-@import "estilomapa";
-@import "estiloletras";
-
-
 @import "estilosgenerales";
-@import "nombreareas";
-@import "estructuradeskpot";
-@import "estructuratablet";
-@import "estructurasmarthphone";
-@import "animaciones";
+
+@import "variables";
+
+@import "estilos/estilobody";
+@import "estilos/estiloheader";
+@import "estilos/estilomain";
+@import "estilos/estilonav";
+@import "estilos/estiloredessociales";
+@import "estilos/estiloaside";
+@import "estilos/estilofooter";
+@import "estilos/estilologo";
+@import "estilos/estilomapa";
+@import "estilos/estiloletras";
+
+
+
+@import "responsive/nombreareas";
+@import "responsive/estructuradeskpot";
+@import "responsive/estructuratablet";
+@import "responsive/estructurasmarthphone";
+@import "animaciones/animaciones";
 

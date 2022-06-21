@@ -5,16 +5,16 @@
     flex-flow: column wrap;
 }
 aside {
-    background-color: black;
+    background-color: $colorPrimario;
     margin: 1%;
     padding: 10%;
 }
 .aColumn{
-    background-color: white;
+    background-color: $colorSecundario;
     text-align:center;
     margin: 8%;
     padding: 5%;
 }
 span:hover{
-    border-bottom: solid 2px     red;
+    border-bottom: solid 2px $colorTerciario;
 }
