@@ -92,6 +92,10 @@ a:hover{
     display: flex;
     align-items: center;
 }
+
+.sacarGutter{
+    --bs-gutter-x: 0rem;
+}
 /* ASIDE*/
 
 .columnaProductos {
@@ -147,6 +151,16 @@ h4{
     text-align: center;
     margin-top: 3%;
 }
+
+/*NOWRAP REDES*/
+.sacarwrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*AJUSTAR NOSOTROS*/
+.ajustar{
+    margin-bottom: 150px;
+}   
 
 /*Nombre de areas*/
 .cabeza{
@@ -450,6 +464,9 @@ h2{
 .mostrarCarrouselUno{
     display: none;
 }
+.ajustarRedesNosotros{
+    margin-top: 400px;
+}
 /* NAV*/
 .estiloNav{
     display: flex;
@@ -556,6 +573,10 @@ h2{
 }
 .productoImgSmarthphoneTokens{
     width: 100%;
+}
+
+.logoIndex{
+    width: 80%;
 }
 
 }
