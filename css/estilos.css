@@ -151,6 +151,10 @@ span:hover {
   --bs-gutter-x: 0rem;
 }
 
+.noPadding {
+  padding: 0%;
+}
+
 /*NOWRAP REDES*/
 .sacarwrap {
   display: flex;
