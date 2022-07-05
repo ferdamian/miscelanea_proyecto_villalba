@@ -16,10 +16,11 @@
         "topMenu topMenu"
         "contenido contenido"
         "redesSociales redesSociales"
-        "logo mapa"
+        "logo logo"
+        "mapa mapa"
         "pie pie"
         ;
-        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr 1fr;
         grid-template-columns: 40% auto;
     }
     /* Areas de Nosotros*/
@@ -98,14 +99,14 @@
     /* NAV */
     .menuNavegacion {
         display:flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         width: 100%;
     }
     .menuNavegacionProductos{
         display:flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
     .estiloNav{
         background-color: black;
@@ -135,37 +136,54 @@
     aside{
         padding: 0;
     }
-    /*LOGO*/
-    .logoImg{
-        width: 60%;
+    /*MAPA*/
+    $tamanio:(
+        logoImg: $logoSmarthphone,
+        imagenesRedesSmarthphone : $iconoRedesSmarthphone
+    );
+    
+    @each $nombre,$valor in $tamanio {
+        .#{$nombre}{
+            width: $valor;
+        }
+    }
+
+    /*REDES*/
+    .redesColumna{
+        flex-direction: column;
     }
     
+    
+    @mixin imagenes ($ancho) {
+        width: $ancho;
+    }
+
     .productoImgSmarthphoneCaja{
-        width: 60%;
+        @include imagenes ($anchoSmarthphone);
     }
     .productoImgSmarthphoneEspacioCaja{
-        width: 60%;
+        @include imagenes ($anchoSmarthphone);
     }
     .productoImgSmarthphoneDescripcionCaja{
-        width: 70%;
+        @include imagenes ($anchoSmarthphone + 10);
     }
     .productoImgSmarthphoneNaipes{
-        width: 60%;
+        @include imagenes ($anchoSmarthphone);
     }
     .productoImgSmarthphoneDescripcionNaipes{
-        width: 90%;
+        @include imagenes (($anchoSmarthphone/2)*3);
     }
     .productoImgSmarthphoneTableros{
-        width: 60%;
+        @include imagenes ($anchoSmarthphone);
     }
     .productoImgSmarthphoneDescripcionTableros{
-        width: 65%;
+        @include imagenes ($anchoSmarthphone + 5);
     }
     .productoImgSmarthphoneMeeples{
-        width: 70%;
+        @include imagenes ($anchoSmarthphone + 10);
     }
     .productoImgSmarthphoneTokens{
-        width: 60%;
+        @include imagenes ($anchoSmarthphone);
     }
     
     .centrarImg{

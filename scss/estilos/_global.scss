@@ -74,9 +74,7 @@ aside {
     margin: 8%;
     padding: 5%;
 }
-span:hover{
-    border-bottom: solid 2px $colorTerciario;
-}
+
 
 /*ESTILOS MAIN*/
 
@@ -122,17 +120,17 @@ span:hover{
 }
 /*ESTILOS REDES SOCIALES*/
 .imagenRedes{
-    width: 30%;
+    width: 20%;
 }
 .centrarRedes{
-    margin: 20%;
+    margin: 7%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .centrarImagenRedes{
-    display: flex;
-    align-items:center;
-    justify-content: center;
+   @extend .centrarRedes;
+   margin: 0%;
 }
 .centrarRedesSociales{
     display: flex;

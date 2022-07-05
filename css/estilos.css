@@ -77,10 +77,6 @@ aside {
   padding: 5%;
 }
 
-span:hover {
-  border-bottom: solid 2px red;
-}
-
 /*ESTILOS MAIN*/
 .margenes {
   margin-left: 5%;
@@ -130,19 +126,18 @@ span:hover {
 
 /*ESTILOS REDES SOCIALES*/
 .imagenRedes {
-  width: 30%;
+  width: 20%;
 }
 
-.centrarRedes {
-  margin: 20%;
+.centrarRedes, .centrarImagenRedes {
+  margin: 7%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .centrarImagenRedes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0%;
 }
 
 .centrarRedesSociales {
@@ -499,8 +494,8 @@ footer {
   /* Areas de Index*/
   .gridAreaIndex {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
-    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo logo" "mapa mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr 1fr;
     grid-template-columns: 40% auto;
   }
   /* Areas de Nosotros*/
@@ -546,14 +541,14 @@ footer {
   /* NAV */
   .menuNavegacion {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   .menuNavegacionProductos {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .estiloNav {
     background-color: black;
@@ -582,9 +577,16 @@ footer {
   aside {
     padding: 0;
   }
-  /*LOGO*/
+  /*MAPA*/
   .logoImg {
-    width: 60%;
+    width: 20%;
+  }
+  .imagenesRedesSmarthphone {
+    width: 10%;
+  }
+  /*REDES*/
+  .redesColumna {
+    flex-direction: column;
   }
   .productoImgSmarthphoneCaja {
     width: 60%;
