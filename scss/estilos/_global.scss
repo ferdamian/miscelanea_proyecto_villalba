@@ -1,3 +1,20 @@
+/* Estilos generales*/
+/*-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&display=swap');
+
+
+.bordeTemporal{
+    border: 5px solid purple;
+    margin: 5px;
+}
+
 /* BODY */
 body{
     background-image:url("../imagenes/backgroundNosotros.png");
@@ -8,6 +25,9 @@ body{
 /*ESTILOS HEADER*/
 header{
     background-color: $colorPrimario;
+    img{
+        width: 100%;
+    }
 }
 .centrarImagenHeader{
     display: flex;
@@ -154,3 +174,32 @@ footer {
     align-items: center;
     justify-content: center;
    }
+
+   /*Nombre de areas*/
+.cabeza{
+    grid-area: cabeza;
+}
+.topMenu{
+    grid-area: topMenu;
+}
+.columna{
+    grid-area: columna;
+}
+.contenido{
+    grid-area: contenido;
+}
+.botMenu{
+    grid-area: botMenu;
+}
+.logo{
+    grid-area: logo;
+}
+.mapa{
+    grid-area: mapa;
+}
+.redesSociales{
+    grid-area: redesSociales;
+}
+.pie{
+    grid-area: pie;
+}

@@ -1,4 +1,4 @@
-/* Estilos generales*/
+/*Variables*/ /* Estilos generales*/
 /*-------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,400;8..144,700&display=swap");
 * {
@@ -14,7 +14,7 @@
   margin: 5px;
 }
 
-/*Variables*/ /* BODY */
+/* BODY */
 body {
   background-image: url("../imagenes/backgroundNosotros.png");
   width: 100%;
@@ -24,6 +24,9 @@ body {
 /*ESTILOS HEADER*/
 header {
   background-color: rgb(0, 0, 0);
+}
+header img {
+  width: 100%;
 }
 
 .centrarImagenHeader {
@@ -185,7 +188,6 @@ footer {
   justify-content: center;
 }
 
-/*responsive*/
 /*Nombre de areas*/
 .cabeza {
   grid-area: cabeza;
@@ -223,6 +225,7 @@ footer {
   grid-area: pie;
 }
 
+/*responsive*/
 /*
 ///////////////////////////////
 /// RESPONSIVE DESKPOT/////////
@@ -543,13 +546,14 @@ footer {
   /* NAV */
   .menuNavegacion {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .menuNavegacionProductos {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .estiloNav {
     background-color: black;
@@ -567,7 +571,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    margin-right: 16%;
     width: 12%;
     font-size: 18px;
   }
