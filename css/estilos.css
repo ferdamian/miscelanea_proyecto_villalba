@@ -25,9 +25,6 @@ body {
 header {
   background-color: rgb(0, 0, 0);
 }
-header img {
-  width: 100%;
-}
 
 .centrarImagenHeader {
   display: flex;
@@ -335,7 +332,7 @@ footer {
 /// RESPONSIVE TABLET /////////
 /// ///////////////////////////
 */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1023px) {
   /*Areas de Index*/
   .gridAreaIndex {
     display: grid;
@@ -490,7 +487,7 @@ footer {
 /// ///////////////////////////
 */
 /*SMARTPHONE*/
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   /* Areas de Index*/
   .gridAreaIndex {
     display: grid;
@@ -501,15 +498,15 @@ footer {
   /* Areas de Nosotros*/
   .gridAreaNosotros {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
-    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo logo" "mapa mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 2fr 1fr;
     grid-template-columns: 50% auto;
   }
   /* Areas de Productos*/
   .gridAreaProductos {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "columna columna" "contenido contenido" "botMenu botMenu" "redesSociales redesSociales" "logo mapa" "pie pie";
-    grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 1fr;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "columna columna" "contenido contenido" "botMenu botMenu" "redesSociales redesSociales" "logo logo" "mapa mapa" "pie pie";
+    grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 2fr 1fr;
     grid-template-columns: 40% auto;
   }
   /* Areas de Contactos*/
@@ -522,9 +519,13 @@ footer {
   /* Areas de Tienda*/
   .gridAreaTienda {
     display: grid;
-    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo mapa" "pie pie";
-    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+    grid-template-areas: "cabeza cabeza" "topMenu topMenu" "contenido contenido" "redesSociales redesSociales" "logo logo" "mapa mapa" "pie pie";
+    grid-template-rows: 2fr 1fr 4fr 2fr 2fr 2fr 1fr;
     grid-template-columns: 50% auto;
+  }
+  /*HEADER*/
+  .bannerSmarthphone {
+    width: 80%;
   }
   /* MAIN */
   .centrarCarrousel {
@@ -574,9 +575,6 @@ footer {
     margin: 1%;
     padding: 0;
   }
-  aside {
-    padding: 0;
-  }
   /*MAPA*/
   .logoImg {
     width: 20%;
@@ -589,31 +587,31 @@ footer {
     flex-direction: column;
   }
   .productoImgSmarthphoneCaja {
-    width: 60%;
+    width: 55%;
   }
   .productoImgSmarthphoneEspacioCaja {
-    width: 60%;
+    width: 55%;
   }
   .productoImgSmarthphoneDescripcionCaja {
-    width: 70%;
-  }
-  .productoImgSmarthphoneNaipes {
-    width: 60%;
-  }
-  .productoImgSmarthphoneDescripcionNaipes {
-    width: 90%;
-  }
-  .productoImgSmarthphoneTableros {
-    width: 60%;
-  }
-  .productoImgSmarthphoneDescripcionTableros {
     width: 65%;
   }
+  .productoImgSmarthphoneNaipes {
+    width: 55%;
+  }
+  .productoImgSmarthphoneDescripcionNaipes {
+    width: 82.5%;
+  }
+  .productoImgSmarthphoneTableros {
+    width: 55%;
+  }
+  .productoImgSmarthphoneDescripcionTableros {
+    width: 60%;
+  }
   .productoImgSmarthphoneMeeples {
-    width: 70%;
+    width: 65%;
   }
   .productoImgSmarthphoneTokens {
-    width: 60%;
+    width: 55%;
   }
   .centrarImg {
     display: flex;

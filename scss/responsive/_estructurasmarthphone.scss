@@ -6,7 +6,7 @@
 */
 
 /*SMARTPHONE*/
-@media (max-width: 480px){
+@media (max-width: 600px){
 
     /* Areas de Index*/ 
     .gridAreaIndex{
@@ -31,10 +31,11 @@
         "topMenu topMenu"
         "contenido contenido"
         "redesSociales redesSociales"
-        "logo mapa"
+        "logo logo"
+        "mapa mapa"
         "pie pie"
         ;
-        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 2fr 1fr;
         grid-template-columns: 50% auto;
     }
     /* Areas de Productos*/
@@ -47,10 +48,11 @@
         "contenido contenido"
         "botMenu botMenu"
         "redesSociales redesSociales"
-        "logo mapa"
+        "logo logo"
+        "mapa mapa"
         "pie pie"
         ;
-        grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr 6fr 2fr 3fr 2fr 2fr 1fr;
         grid-template-columns: 40% auto;
     }
     /* Areas de Contactos*/
@@ -75,12 +77,18 @@
         "topMenu topMenu"
         "contenido contenido"
         "redesSociales redesSociales"
-        "logo mapa"
+        "logo logo"
+        "mapa mapa"
         "pie pie"
         ;
-        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-rows: 2fr 1fr 4fr 2fr 2fr 2fr 1fr;
         grid-template-columns: 50% auto;
     }
+    /*HEADER*/
+    .bannerSmarthphone{
+        width: 80%;
+    }
+
     /* MAIN */
     
     .centrarCarrousel{
@@ -133,9 +141,7 @@
         margin: 1%;
         padding: 0;
     }
-    aside{
-        padding: 0;
-    }
+   
     /*MAPA*/
     $tamanio:(
         logoImg: $logoSmarthphone,
