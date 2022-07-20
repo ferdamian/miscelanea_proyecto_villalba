@@ -526,6 +526,7 @@ footer {
   .bannerSmarthphone {
     width: 80%;
     margin: 2%;
+    padding-left: 5%;
   }
   /* MAIN */
   .centrarCarrousel {
