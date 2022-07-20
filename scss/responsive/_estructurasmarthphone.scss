@@ -103,6 +103,10 @@
         height: 100%;
         margin-top: 22px;
     }
+
+    .paddingTexto{
+        padding: 5%;
+    }
     
     
     /* NAV */
@@ -111,11 +115,13 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        padding: 0%;
     }
     .menuNavegacionProductos{
         display:flex;
         align-items: center;
         flex-direction: column;
+        padding: 0%;
     }
     .estiloNav{
         background-color: black;
@@ -136,6 +142,7 @@
         list-style-type: none;
         width: 12%;
         font-size: 18px;
+        
     }
     /*ASIDE*/
     .aColumn{
